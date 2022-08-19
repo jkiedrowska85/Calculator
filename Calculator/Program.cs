@@ -8,6 +8,7 @@ namespace Calculator
             double number1, number2;
             string operation;
  
+            //asia ma psa :) 
             if ( operation == "dodaj" )
             {
                 Console.WriteLine("Wynik: " + (number1 + number2));
