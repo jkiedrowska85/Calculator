@@ -6,31 +6,31 @@ namespace Calculator
         static void Main(string[] args)
         {
             {
-                string operation = Console.ReadLine();
+                char operation;
                 double number1;
                 double number2;
-                bool resParse1, resParse2;
-                resParse1 = double.TryParse(Console.ReadLine(), out number1);
-                resParse2 = double.TryParse(Console.ReadLine(), out number2);
+                char.TryParse(args[1], out operation);
+                double.TryParse(args[0], out number1);
+                double.TryParse(args[2], out number2);
 
                 switch (operation)
                 {
-                    case "dodaj":
+                    case '+':
                         {
                             Console.WriteLine("Wynik: " + (number1 + number2));
                             break;
                         }
-                    case "odejmij":
+                    case '-':
                         {
                             Console.WriteLine("Wynik: " + (number1 - number2));
                             break;
                         }
-                    case "mnóż":
+                    case '*':
                         {
                             Console.WriteLine("Wynik: " + (number1 * number2));
                             break;
                         }
-                    case "dziel":
+                    case '/':
                         {
                             Console.WriteLine("Wynik: " + (number1 / number2));
                             break;

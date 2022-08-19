@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Calculator": {
+      "commandName": "Project",
+      "commandLineArgs": "odejmij 10 2"
+    }
+  }
+}
